@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Counter</title>
+    <link rel="stylesheet" href="../global.css">
+    <style>
+        .counter {
+            font-size: 1.5rem;
+            width: 95%;
+        }
+        #count{
+            font-size: 2rem;
+        }
+
+        textarea {
+            width: 95%;
+            min-height: 40%;
+            padding: 0.5rem 0.75rem;
+            background: var(--color-soft-teal);
+            border: 1px solid var(--color-charcoal);
+            border-radius: 0.5rem;
+            outline: none;
+            font-size: 1.25rem;
+        }
+        textarea:focus {
+            border-color: var(--color-muted-rose);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <textarea type="text" class="input" id="characterInput" placeholder="Start Typing"></textarea>
+        <div class="counter">
+            You have typed <span id="count">0</span> characters.
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

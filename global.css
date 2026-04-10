@@ -1,0 +1,35 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+:root {
+  --color-sage: #a3b18a;
+  --color-dusty-blue: #6d8a96;
+  --color-taupe: #c2b8a3;
+  --color-soft-teal: #a8bbbf;
+  --color-muted-rose: #7b3b4b;
+  --color-charcoal: #3a3a3a;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-taupe);
+  color: var(--color-muted-rose);
+}
+
+#app {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background: var(--color-sage);
+  border-radius: 1rem;
+}

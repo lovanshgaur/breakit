@@ -25,3 +25,4 @@ function updateVal(val){
 function render(){
     counter.innerHTML = n
 }
+render()
