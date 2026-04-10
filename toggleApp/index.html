@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToggleApp</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --color-sage: #a3b18a;
+            --color-dusty-blue: #6d8a96;
+            --color-taupe: #c2b8a3;
+            --color-soft-teal: #a8bbbf;
+            --color-muted-rose: #7b3b4b;
+            --color-charcoal: #3a3a3a;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            background: var(--background);
+            color: var(--text);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --background: #12100e;
+            --surface: #1e1b18;
+            --text: #f2efe8;
+            --accent: #d4a373;
+            transition: all 0.25s ease;
+        }
+
+        .light {
+            --background: #f4f1ea;
+            --surface: #fffdf8;
+            --text: #2d2a26;
+            --accent: #c97b3c;
+        }
+
+        header,
+        footer {
+            width: 100%;
+            height: 15%;
+            padding: 0.5rem 2rem;
+            display: flex;
+            align-items: center;
+        }
+
+        header {
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 2rem;
+        }
+
+        .toggle-btn-wrapper {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .toggle-btn {
+            width: 4rem;
+            height: 2rem;
+            border-radius: 2rem;
+            background: var(--text);
+            position: relative;
+        }
+
+        .toggle-ball {
+            position: absolute;
+            top: 0;
+            left: 0%;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            background: var(--accent);
+            transition: all 0.25s ease;
+        }
+
+        .light .toggle-ball {
+            right: 0;
+            left: auto;
+        }
+
+        footer {
+            justify-content: center;
+        }
+
+        main {
+            width: 100%;
+            height: 100%;
+            background: var(--surface);
+            padding: 0.5rem 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            text-align: center;
+        }
+
+        main p {
+            width: 60%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container" class="container">
+        <header>
+            <div class="logo">ToggleApp</div>
+            <div class="toggle-btn-wrapper">
+                <div class="toggle-btn" id="toggle">
+                    <div class="toggle-ball" id="toggleBall"></div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <h1>The Toggle Button App</h1>
+            <h3>Try toggling the theme from dark to light.</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti reiciendis doloribus illo beatae
+                officiis nostrum. Sit aut esse iste natus, molestiae, odit quos doloribus repellendus culpa in dolore
+                sed aliquid!</p>
+        </main>
+        <footer>
+            <h3>ToggleApp-Breakit</h3>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
